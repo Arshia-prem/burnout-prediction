@@ -18,9 +18,9 @@ st.set_page_config(
 # ---------------------------------------------------------
 @st.cache_resource
 def load_model():
-    model       = joblib.load("model/burnout_model.pkl")
-    preprocessor = joblib.load("model/preprocessor.pkl")
-    le          = joblib.load("model/label_encoder.pkl")
+    model        = joblib.load("burnout_model.pkl")
+    preprocessor = joblib.load("preprocessor.pkl")
+    le           = joblib.load("label_encoder.pkl")
     return model, preprocessor, le
 
 try:
